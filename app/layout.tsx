@@ -5,6 +5,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import { NavigationSection } from "@/components/custom-components/core/NavigationSection";
+import { FooterSection } from "@/components/custom-components/core/FooterSection";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={GeistSans.className}>
         <NavigationSection/>
         {children}
+        <FooterSection/>
         </body>
     </html>
   );
